@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import { Instagram, Mail } from 'lucide-react';
 
 const Footer = ({ setCurrentPage }) => {
   return (
@@ -13,8 +13,11 @@ const Footer = ({ setCurrentPage }) => {
               Equipping students with high school and career readiness resources to ensure long-term success.
             </p>
             <div className="flex space-x-4">
-              <a href="https://instagram.com/bridged.moco" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-200">
+              <a href="https://instagram.com/moco.bridged" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-200" aria-label="Instagram">
                 <Instagram size={20} />
+              </a>
+              <a href="mailto:mocobridged@gmail.com" className="text-white hover:text-blue-200" aria-label="Email">
+                <Mail size={20} />
               </a>
             </div>
           </div>
@@ -63,31 +66,45 @@ const Footer = ({ setCurrentPage }) => {
             <h3 className="text-lg font-bold mb-4">Resources</h3>
             <ul className="space-y-2">
               <li>
-                <button className="text-blue-200 hover:text-white">Internships</button>
+                <button className="text-blue-200 hover:text-white" onClick={() => setCurrentPage('resources')}>Internships</button>
               </li>
               <li>
-                <button className="text-blue-200 hover:text-white">Scholarships</button>
+                <button className="text-blue-200 hover:text-white" onClick={() => setCurrentPage('resources')}>Scholarships</button>
               </li>
               <li>
-                <button className="text-blue-200 hover:text-white">Volunteer Opportunities</button>
+                <button className="text-blue-200 hover:text-white" onClick={() => setCurrentPage('resources')}>Volunteer Opportunities</button>
               </li>
               <li>
-                <button className="text-blue-200 hover:text-white">Career Fairs</button>
+                <button className="text-blue-200 hover:text-white" onClick={() => setCurrentPage('resources')}>Career Fairs</button>
               </li>
               <li>
-                <button className="text-blue-200 hover:text-white">Workshops</button>
+                <button className="text-blue-200 hover:text-white" onClick={() => setCurrentPage('resources')}>Workshops</button>
               </li>
             </ul>
           </div>
 
           {/* Contact */}
-
+          <div>
+            <h3 className="text-lg font-bold mb-4">Contact Us</h3>
+            <ul className="space-y-3">
+              <li className="flex items-center">
+                <Mail className="w-5 h-5 mr-2 text-blue-200" />
+                <a href="mailto:mocobridged@gmail.com" className="text-blue-200 hover:text-white">
+                  mocobridged@gmail.com
+                </a>
+              </li>
+              <li className="flex items-center">
+                <Instagram className="w-5 h-5 mr-2 text-blue-200" />
+                <a href="https://instagram.com/moco.bridged" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white">
+                  @moco.bridged
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div className="border-t border-blue-800 mt-12 pt-8 text-center text-blue-200">
           <p>&copy; {new Date().getFullYear()} MoCo Bridged. All rights reserved.</p>
-          <div className="mt-2 flex justify-center space-x-6">
-          </div>
         </div>
       </div>
     </footer>

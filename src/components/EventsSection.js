@@ -25,14 +25,14 @@ const EventsSection = () => {
   ];
 
   return (
-    <div className="bg-[#f5f9ff] py-16 border-t border-blue-100">
+    <div id="events-section" className="bg-[#f5f9ff] py-16 border-t border-blue-100">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center text-[#0C2944] mb-4 tracking-wide">Our Events</h2>
 
         {/* Added description */}
         <div className="max-w-2xl mx-auto text-center mb-12">
           <p className="text-gray-700 leading-relaxed">
-            Join us at our upcoming events designed to help students connect with resources,
+            Join us at our events designed to help students connect with resources,
             develop professional skills, and explore career opportunities.
           </p>
         </div>

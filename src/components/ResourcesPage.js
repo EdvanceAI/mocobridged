@@ -200,10 +200,10 @@ const ResourcesPage = () => {
       {/* Larger Hero Section */}
       <div className="bg-[#0C2944] text-white">
         <div className="container mx-auto px-6 py-20">
-          <h1 className="text-4xl font-bold text-center mb-6 tracking-wide">Find Your Resources</h1>
-          <p className="text-center text-blue-100 mb-10 max-w-2xl mx-auto">
+          <h1 className="text-4xl font-bold text-center mb-6 tracking-wide">Find Resources</h1>
+          <h2 className="text-center text-blue-100 mb-10 max-w-3xl mx-auto">
             Explore our comprehensive database of opportunities, events, and resources.
-          </p>
+          </h2>
 
           {/* Search bar positioned lower */}
           <div className="relative max-w-lg mx-auto mt-10">

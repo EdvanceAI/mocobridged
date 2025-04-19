@@ -8,7 +8,7 @@ const Navbar = ({ currentPage, setCurrentPage, isMobileMenuOpen, setIsMobileMenu
         <div className="flex justify-between items-center">
           {/* Logo Section */}
           <div className="flex items-center">
-            <div className=" rounded-full p-1 mr-3">
+            <div className="rounded-full p-1 mr-3">
               <img src="/images/logo.png" alt="Logo" className="w-9 h-8" />
             </div>
             <button
@@ -42,7 +42,12 @@ const Navbar = ({ currentPage, setCurrentPage, isMobileMenuOpen, setIsMobileMenu
             >
               About
             </button>
-
+            <button
+              className={`${currentPage === 'contact' ? 'font-bold' : ''} hover:text-blue-200 transition-colors`}
+              onClick={() => setCurrentPage('contact')}
+            >
+              Contact
+            </button>
           </div>
 
           {/* Right side spacer for desktop */}
@@ -90,7 +95,15 @@ const Navbar = ({ currentPage, setCurrentPage, isMobileMenuOpen, setIsMobileMenu
               >
                 About
               </button>
-
+              <button
+                className={`${currentPage === 'contact' ? 'font-bold' : ''} hover:text-blue-200 transition-colors`}
+                onClick={() => {
+                  setCurrentPage('contact');
+                  setIsMobileMenuOpen(false);
+                }}
+              >
+                Contact
+              </button>
             </div>
           </div>
         )}
