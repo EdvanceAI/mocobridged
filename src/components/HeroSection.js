@@ -43,7 +43,7 @@ const HeroSection = ({ setCurrentPage }) => {
               }}
             >
               <Calendar size={20} className="mr-1" />
-              <span>View Events</span>
+              <span>View Our Events</span>
             </button>
           </div>
         </div>

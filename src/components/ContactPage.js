@@ -3,14 +3,16 @@ import { Mail, Instagram } from 'lucide-react';
 
 const ContactPage = () => {
   return (
-    <div className="bg-white min-h-screen">
-      {/* Header */}
-      <div className="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-center mb-4">Contact Us</h1>
-          <p className="text-center max-w-3xl mx-auto text-blue-100">
-            Have questions or want to get involved? We'd love to hear from you!
-          </p>
+    <div className="min-h-screen bg-[#f8fafc]">
+      {/* Hero Section */}
+      <div className="bg-[#0C2944] text-white">
+        <div className="container mx-auto px-6 py-20 text-center">
+          <h1 className="text-4xl font-bold mb-6 tracking-wide">Contact Us</h1>
+          <div className="max-w-2xl mx-auto">
+            <p className="text-blue-100">
+              Have questions or want to get involved? We'd love to hear from you!
+            </p>
+          </div>
         </div>
       </div>
 
